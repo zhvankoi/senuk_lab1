@@ -1,28 +1,16 @@
 var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+var connect = require('gulp-connect');
 
 // Static Server + watching scss/html files
-gulp.task('serve', function () {
+gulp.task('livereload', function () {
+    gulp.src('').pipe(connect.reload());
+});
 
-    browserSync.init({
-        server: "."
+gulp.task('default', function () {
+    connect.server({
+        livereload: true,
+        port: 5001
     });
 
-    gulp.watch(["./**/*.+(html|css|js)"]).on('change', browserSync.reload);
+    gulp.watch(["./**/*.+(html|css|js)", "!./gulpfile.js"], ['livereload']);
 });
-
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function () {
-    return gulp.src("./styles/**/*.scss")
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            sourceMap: true
-        }))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest("./styles"))
-    //.pipe(browserSync.stream());
-});
-
-gulp.task('default', ['serve']);

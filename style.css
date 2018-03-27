@@ -213,3 +213,122 @@ header > section#our-company > p {
 section.box h2 {
     margin: -2rem 0 3rem 0;
 }
+
+#cars-list {
+    width: 100%;
+    border-collapse: separate;
+    font-size: 16pt;
+}
+
+#cars-list td {
+    padding: 2rem 1rem;
+}
+
+#cars-list td img {
+    margin: -2rem -1rem;
+    border-radius: 1rem;
+}
+
+#cars-list thead {
+    background-color: lightgrey;
+}
+
+#cars-list tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+#cars-list tbody tr:nth-child(even) {
+    background-color: seashell;
+}
+
+#cars-list tbody tr:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 10px  blue;
+}
+
+.carousel-item {
+    padding: 8rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgb(132, 186, 236) !important;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-size: 0.5rem;
+    background-size: 50% 50% !important;
+}
+
+#carouselExampleIndicators {
+    width: 70%;
+    margin: -9rem auto;
+}
+
+form.registration {
+    font: inherit;
+    clear: both; }
+    form.registration table {
+      margin: auto;
+      background: linear-gradient(-180deg, #d7e1f8 0%, #aab6f8 100%);
+      width: 100%;
+       }
+      form.registration table th {
+        padding: 1rem 0rem 2rem 0; }
+      form.registration table tbody {
+        font-size: 14px; }
+        form.registration table tbody td {
+          padding: 0.8rem 0.5rem; }
+          form.registration table tbody td input {
+            min-width: 22rem; }
+          form.registration table tbody td[colspan="2"] {
+            text-align: center; }
+    form.registration input[type=date]::-webkit-calendar-picker-indicator {
+      background: url(/img/calendar.png) no-repeat;
+      background-size: contain;
+      background-position: center;
+      color: transparent; }
+    form.registration input[type=text], form.registration input[type=date], form.registration input[type=tel],
+    form.registration input[type=email], form.registration textarea, form.registration select, form.registration .styled-select {
+      width: 100%;
+      font: inherit;
+      border: 1px solid #BEBEBE;
+      padding: 1rem;
+      margin: 0px;
+      transition: all 0.30s ease-in-out;
+      outline: none; }
+      form.registration input[type=text]::-webkit-inner-spin-button, form.registration input[type=date]::-webkit-inner-spin-button, form.registration input[type=tel]::-webkit-inner-spin-button,
+      form.registration input[type=email]::-webkit-inner-spin-button, form.registration textarea::-webkit-inner-spin-button, form.registration select::-webkit-inner-spin-button, form.registration .styled-select::-webkit-inner-spin-button {
+        display: none;
+        -webkit-appearance: none; }
+      form.registration input[type=text]:focus, form.registration input[type=date]:focus, form.registration input[type=tel]:focus,
+      form.registration input[type=email]:focus, form.registration textarea:focus, form.registration select:focus, form.registration .styled-select:focus {
+        box-shadow: 0 0 8px #ff8989;
+        border: 1px solid #f08c8c; }
+      form.registration input[type=text]::placeholder, form.registration input[type=date]::placeholder, form.registration input[type=tel]::placeholder,
+      form.registration input[type=email]::placeholder, form.registration textarea::placeholder, form.registration select::placeholder, form.registration .styled-select::placeholder {
+        color: #BEBEBE; }
+    form.registration .styled-select {
+      width: 100%;
+      border-radius: 0px;
+      background: white;
+      border: 1px solid #BEBEBE;
+      padding: 1rem;
+      margin: 0px;
+      line-height: inherit;
+      height: unset;
+      float: unset; }
+      form.registration .styled-select::after {
+        border-color: red;
+        border-width: 1px; }
+      form.registration .styled-select .list {
+        left: 0;
+        right: 0; }
+    form.registration input[type=submit] {
+      font: inherit;
+      background: #F6303E;
+      padding: 1.2rem 2.4rem;
+      border: none;
+      color: #fff;
+      min-width: 9.4rem; }
+      form.registration input[type=submit]:hover {
+        background: #ff4848;
+        box-shadow: none; }

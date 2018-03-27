@@ -5,16 +5,12 @@
   "main": "main.js",
   "devDependencies": {
     "gulp": "3.9.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-connect": "^5.5.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Natalia Diduch",
   "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.23.6",
-    "octicons": "^7.1.0"
-  }
+  "dependencies": {}
 }
